@@ -51,7 +51,7 @@ function ai_chatbot_send()
     check_ajax_referer('ai_chat_nonce', 'nonce');
 
     $user_message = sanitize_text_field($_POST['message'] ?? '');
-    $api_key = "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";
+    $api_key = "YOUR API KEY";
 
     global $wpdb;
     $keywords = explode(" ", $user_message);
